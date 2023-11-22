@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+   --colortextcard1: #6CA6DC;
+   --colortextcard2: #7E7E7E;
+   --colortextcard3: #E26C7F;
+   --bg-header: #F0F0EF; 
+}
+body{
+    text-align: center;
+}
+.title{
+    padding: 0 16px;
+    text-align: left;
+}
+.blue__text{
+    color: var(--colortextcard1);
+}
+.dark__text{
+    color: var(--colortextcard2);
+}
+.red__text{
+    color: var(--colortextcard3);
+}
+.CardsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    margin: 0 auto;
+    text-align: left;
+    border-radius: 10px;
+}
+.card1{
+    border: 2px solid var(--colortextcard1);
+}
+.card2{
+    border: 2px solid var(--colortextcard2);
+}
+.card3{
+    border: 2px solid var(--colortextcard3);
+}
+.title{
+    background-color: var(--bg-header);
+    text-align: left;
+    display: flex;
+    padding: 15px 20px;
+    border-bottom: 2px solid var(--colortextcard2);
+    margin: 0;
+    border-radius: 10px 10px 0 0;
+}
+.target{ /***De esta manera hago que las tarjetas se separen y dejen de ser las 3 una unidad***/
+    width: 250px;
+     padding: 10px;
+ }
+
+@media screen and (min-width:185px) {
+    .target{
+        float: left;
+        align-items: center;/***Ubico este elemento que contiene la unidad de mis 3 tarjetas la lado izquierdo de mi contenedor en el modo mobile***/
+    }
+}
